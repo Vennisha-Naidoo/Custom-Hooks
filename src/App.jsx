@@ -11,14 +11,12 @@ import { useFetch } from './hooks/useFetch.js';
 
 function App() {
   const selectedPlace = useRef();
-
-  // const [isFetching, setIsFetching] = useState(false);
-  // const [error, setError] = useState();
-
+  
   const [errorUpdatingPlaces, setErrorUpdatingPlaces] = useState();
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  //destructuring values so they can be accessible within this component
   const { 
     isFetching, 
     error, 
